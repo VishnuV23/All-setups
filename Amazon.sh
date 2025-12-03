@@ -1,8 +1,6 @@
 #! /bin/bash
-yum install httpd git -y
-systemctl start httpd
-systemctl status httpd
-cd /var/www/html
+sudo -i
+apt update
+apt install apache2  -y
 git clone https://github.com/Ironhack-Archive/online-clone-amazon.git
-mv online-clone-amazon/* .
-tail -f /var/log/httpd/access_log
+mv online-clone-amazon/* /var/www/html/
