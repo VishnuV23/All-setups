@@ -9,7 +9,3 @@ yum install java-17-amazon-corretto jenkins -y
 sudo yum install jenkins -y
 sudo systemctl restart jenkins
 sudo systemctl daemon-reload
-
-#Add git maven java-1.8.0 tree
-yum install git java-1.8.0-openjdk maven tree -y
-update-alternatives --config java
